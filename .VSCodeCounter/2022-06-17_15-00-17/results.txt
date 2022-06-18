@@ -1,0 +1,43 @@
+Date : 2022-06-17 15:00:17
+Directory : /home/amitjosemundackal-vonnue/codes/azure
+Total : 16 files,  1325 codes, 3 comments, 34 blanks, all 1362 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| CSS      |          1 |        641 |          0 |          8 |        649 |
+| HTML     |          1 |        524 |          3 |         14 |        541 |
+| XML      |         14 |        160 |          0 |         12 |        172 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                        |         16 |      1,325 |          3 |         34 |      1,362 |
+| images                                                                   |         14 |        160 |          0 |         12 |        172 |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                 | language | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/amitjosemundackal-vonnue/codes/azure/azure.css                     | CSS      |        641 |          0 |          8 |        649 |
+| /home/amitjosemundackal-vonnue/codes/azure/azure.html                    | HTML     |        524 |          3 |         14 |        541 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/arrow.svg              | XML      |          1 |          0 |          0 |          1 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/azure-arc.svg          | XML      |         32 |          0 |          1 |         33 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/azure-devops.svg       | XML      |          1 |          0 |          0 |          1 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/azure-sql-database.svg | XML      |          1 |          0 |          1 |          2 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/book-alt.svg           | XML      |          4 |          0 |          1 |          5 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/bosch-logo.svg         | XML      |          9 |          0 |          1 |         10 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/container-apps.svg     | XML      |         22 |          0 |          1 |         23 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/ge-logo.svg            | XML      |         11 |          0 |          1 |         12 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/github-icon.svg        | XML      |          3 |          0 |          1 |          4 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/icon-chat.svg          | XML      |          1 |          0 |          0 |          1 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/kubernetes-service.svg | XML      |         46 |          0 |          2 |         48 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/nba-logo.svg           | XML      |          8 |          0 |          1 |          9 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/pepsico-logo.svg       | XML      |         14 |          0 |          1 |         15 |
+| /home/amitjosemundackal-vonnue/codes/azure/images/pricing06.svg          | XML      |          7 |          0 |          1 |          8 |
+| Total                                                                    |          |      1,325 |          3 |         34 |      1,362 |
++--------------------------------------------------------------------------+----------+------------+------------+------------+------------+
