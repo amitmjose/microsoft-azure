@@ -6,6 +6,7 @@ body {
   font-family: "latest";
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 li {
   list-style-type: none;
@@ -818,11 +819,12 @@ text-align: center;
 .alex-links button{
   background-color: #0078d4;
   border: 0;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 15px;
   font-weight: 600;
   color: #fff;
-  padding: 11px 15px 11px 48px;
+  padding: 14px 18px 14px 48px;
+  cursor: pointer;
   position: relative;
 }
 .alex1{
@@ -848,4 +850,15 @@ text-align: center;
   text-decoration: underline;
   text-underline-offset: 0.1em;
   text-decoration-color: #b8b9ba;
+  cursor: pointer;
+}
+.alex2 i{
+  padding-left: 4px;
+}
+.alex1 button:hover{
+  background-color: #0062ad;
+  text-decoration: underline;
+} 
+.alex2:hover{
+  text-decoration: none;
 }
