@@ -862,3 +862,51 @@ text-align: center;
 .alex2:hover{
   text-decoration: none;
 }
+
+.cards-bottom{
+  padding: 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cardgrid-bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  width:100;
+  max-width: 1310px;
+}
+.gridcard{
+  padding: 24px;
+  color: #f8f9fa;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0 2px 5px; 
+  cursor: pointer;
+}
+.gridcard img{
+  height: 48px;
+  width: 48px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+.gridcard h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.gridcard p{
+font-size: 16px;
+font-weight: 400;
+}
+.grid-a{
+  background-color: #243a5e;
+}
+.grid-b{
+  background-color: #242429;
+}
+.grid-c{
+  background-color: #0062ad;
+}
+.gridcard h3:hover{
+  text-decoration: underline;
+}
