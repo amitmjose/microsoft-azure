@@ -2,6 +2,14 @@
   font-family: "latest";
   src: url(fonts/SegoeUI-Roman-VF_web.woff2);
 }
+@keyframes swoosh{
+  0%{transform: translateX(13px);}
+  100%{transform: translateX(-24px)}
+}
+@keyframes arrow{
+  0%{transform: translateX(0px);}
+  100%{transform: translateX(4px)}
+}
 body {
   font-family: "latest";
   margin: 0;
@@ -14,7 +22,8 @@ li {
 
 .nav-container {
   display: flex;
-  max-width: 71%;
+  max-width: 1310px;
+  width: 100%;
   max-height: 54px;
   margin: 0 auto;
   justify-content: space-between;
@@ -136,27 +145,29 @@ form {
   font-size: 13px;
   font-weight: 600;
 }
-.covid a:hover {
+.covid a:hover{
   text-decoration: underline;
   cursor: pointer;
 }
-
+.covid a:hover i{
+  animation: arrow 0.3s ease forwards;
+}
 .banner-top {
   background: url(images/hero-desktop.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 608px;
-  display: flex;
-  justify-content: flex-start;
+  height: 608px;  
+}
+.welcome-wrapper {
+  max-width: 1310px;
+  margin: 0 auto;
   position: relative;
 }
-.welcome {
-  margin-left: 200px;
-  margin-top: 100px;
-  padding: 0;
-  max-width: 1310px;
+.welcome{
   position: absolute;
+  top: 80px;
+  padding: 0 .9375rem;
 }
 .p-top {
   color: #0062ad;
@@ -173,6 +184,7 @@ form {
   font-weight: 600;
   line-height: 1.1;
   margin: 0;
+  padding-bottom: 15px;
   text-align: left;
 }
 .p-bottom {
@@ -185,7 +197,7 @@ form {
   margin-top: 00px;
 }
 .welcome-buttons {
-  margin-top: 24px;
+  margin-top: 30px;
 }
 .welcome-buttons ul {
   display: flex;
@@ -231,7 +243,8 @@ form {
   padding: 60px 0px;
   margin: 0 auto;
   color: #4c4c51;
-  max-width: 71%;
+  max-width: 1310px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,6 +259,8 @@ form {
 }
 .overview-midsecs {
   margin: 36px auto;
+  padding: 0 .9375rem;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -329,11 +344,11 @@ form {
   width: 153px;
 }
 
-.sec1-text h2:hover {
+.sec1:hover h2{
   text-decoration: underline;
 }
-.sec2-text h2:hover,
-.sec3-text h2:hover {
+.sec2:hover h2,
+.sec3:hover h2{
   text-decoration: underline;
   color: #243a5e;
 }
@@ -378,19 +393,23 @@ form {
   background-color: #f8f9fa;
 }
 .products h2 {
-  width: 71%;
+  max-width: 1310px;
+  width: 100%;
   margin: 0 auto;
   color: #1a1a1f;
   text-align: left;
   font-size: 23px;
   font-weight: 600;
   letter-spacing: 1px;
+  padding: 0 .9375rem;
 }
 .main {
   display: flex;
-  width: 71%;
+  max-width: 1310px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 48px;
+  padding: 0 .9375rem;
 }
 .cards-mid {
   display: flex;
@@ -454,6 +473,7 @@ form {
   padding: 24px;
   background-color: #fff;
   cursor: pointer;
+  border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.14) 0 2px 5px;
 }
 .card-top{
@@ -481,7 +501,7 @@ text-align: center;
   box-shadow: rgba(0, 0, 0, 0.14) 0 4px 5px;
   transition-duration: 0.3s;
 }
-.card a:hover{
+.card:hover a{
   text-decoration: underline;
 }
 .tabview{
@@ -492,10 +512,6 @@ text-align: center;
 }
 .tabview:hover{
   animation: swoosh 0.5s ease forwards;
-}
-@keyframes swoosh{
-  0%{transform: translateX(13px);}
-  100%{transform: translateX(-24px)}
 }
 .tab-window img{
   padding: 24px;
@@ -568,27 +584,34 @@ text-align: center;
   height: 100%;
   background-size: cover;
   background-position: center;
+  
+}
+.nba-text-wrapper{
+  max-width: 1310px;
+  margin: 0 auto;
   position: relative;
 }
 .nbatext{
   background-color: #1a1a1ff0;
   position: absolute;
-  bottom: 50px;
-  left: 250px;
-  max-width: 520px;
+  top:350px;
+  right: 600px;
+  max-width: 570px;
   padding: 24px;
+  margin: 0 0.9375rem;
   border-radius: 6px;
 }
 .nbatext p{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 25px;
   color: #f8f9fa;
 }
 .nbatext a{
   color: #f8f9fa;
   font-size: 13px;
+  font-weight: 600;
   text-decoration: underline;
   position: relative;
   cursor: pointer;
@@ -603,13 +626,17 @@ text-align: center;
 .nbatext a:hover{
   text-decoration: none;
 }
+.nbatext a:hover i{
+  animation: arrow 0.3s ease forwards;
+}
 .tools{
-  padding: 60px 0;
+  padding: 60px 0.9375rem;
   background-color: #f8f9fa;
 }
 .tools-wrapper{
   display: flex;
-  width: 71%;
+  max-width: 1310px;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -626,6 +653,7 @@ text-align: center;
 .tools-text h2{
   font-size: 33px;
   color: #1a1a1f;
+  letter-spacing: 1px;
 }
 .tools-button{
   display: inline-block;
@@ -647,7 +675,10 @@ text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 84px 0;
+  padding: 84px 0.9375rem;
+  max-width: 1310px;
+  width: 100%;
+  margin: 0 auto;
 }
 .discover h2{
   color: #1a1a1f;
@@ -662,9 +693,12 @@ text-align: center;
   column-gap: 30px;
   row-gap: 24px;
   margin-top: 36px;
+  max-width: 1310px;
+  width: 100%;
 }
 .grid-container img{
   border-radius: 6px 6px 0 0;
+  image-rendering: auto;
 }
 .grid1{
   grid-column: 1/2;
@@ -774,13 +808,13 @@ text-align: center;
   padding: 12px;
   padding-right: 15px;
 }
-.grid1:hover , .grid2:hover , .grid3:hover , .grid4:hover , .grid5:hover , .grid6:hover{
-  box-shadow: rgba(0, 0, 0, 0.14) 0 4px 5px;
+.gridz:hover{
+   box-shadow: rgba(0, 0, 0, 0.14) 0 4px 5px;
 }
-.text2:hover{
+.gridz:hover .text2{
   text-decoration: underline;
 }
-.grid3-text-desktop p:hover , .grid5-text-desktop p:hover{
+.grid3-text-desktop:hover p , .grid5-text-desktop:hover p{
   text-decoration: underline;
 }
 .story{
@@ -796,6 +830,7 @@ text-align: center;
   position: absolute;
   max-width: 1300px;
   top: 60px;
+  padding: 0 .9375rem;
 }
 .alex{
   display: flex;
@@ -862,7 +897,9 @@ text-align: center;
 .alex2:hover{
   text-decoration: none;
 }
-
+.alex2:hover i{
+  animation: arrow 0.3s ease forwards;
+}
 .cards-bottom{
   padding: 60px 0;
   width: 100%;
@@ -875,6 +912,7 @@ text-align: center;
   column-gap: 30px;
   width:100;
   max-width: 1310px;
+  padding: 0 .9375rem;
 }
 .gridcard{
   padding: 24px;
@@ -907,6 +945,150 @@ font-weight: 400;
 .grid-c{
   background-color: #0062ad;
 }
-.gridcard h3:hover{
+.gridcard:hover h3{
+  text-decoration: underline;
+}
+
+
+footer{
+  background-color: #f4f5f6;
+  margin: 0;
+  padding: 48px 0 36px;
+}
+.footer-wrapper{
+  max-width: 1310px;
+  width: 100%;
+  margin: 0 auto;
+}
+.social-media{
+  display: flex;
+  align-items: center;
+  max-width: 1310px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+.social-media a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 12px;
+  color: #4c4c51;
+  background-color: #eaebec;
+  cursor: pointer;
+}
+.social-media a span svg{
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+.gta{
+  margin: 0;
+  margin-left: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.social-media a:hover .gta{
+  text-decoration: underline;
+}
+.social-media ul{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 36px;
+  padding: 0;
+}
+.social-media ul li svg{
+  width: 24px;
+  max-width: 100%;
+  padding: 2px 25px 2px 0;
+  cursor: pointer;
+}
+.social-media ul li svg:hover{
+  opacity: 0.7;
+}
+.columns{
+  display: grid;
+  grid-template-columns: repeat(6 , 1fr);
+  max-width: 1310px;
+  margin: 36px  auto 0;
+  column-gap: 24px;
+  padding: 0 18px;
+}
+.column h3{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0 0 9px;
+  line-height: 1.3;
+  color: #1a1a1f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.column ul{
+  padding: 0;
+}
+.column ul li{
+  margin-top: 12px;
+  color: #1a1a1f;
+  padding: 2px 0;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.column ul li:hover{
+  text-decoration: underline;
+}
+.tail-end{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 18px;
+  column-gap: 30px;
+}
+.language{
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  max-width: 188px;
+}
+.tail{
+  grid-column: 2/4;
+  margin-top: 36px;
+}
+.language label{
+  margin-bottom: 8px;
+  vertical-align: text-bottom;
+  font-size: 12px;
+  color: #1a1a1f;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.language select{
+  background-color: #fff;
+  color: #1a1a1f;
+  font-size: 14px;
+  padding: 5px;
+  height: 36px;
+  width: 100%;
+  border: 1px solid #747479;
+}
+.tail{
+  padding: 0;
+  text-align: right;
+}
+.tail p{
+  display: inline;
+  color: #1a1a1f;
+  font-size: 12px;
+  padding: 2px 0;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 12px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.trademark{
+  font-weight: 600;
+} 
+.tail a:hover{
   text-decoration: underline;
 }
