@@ -1089,6 +1089,6 @@ footer{
 .trademark{
   font-weight: 600;
 } 
-.tail a:hover{
+.tail p:hover{
   text-decoration: underline;
 }
