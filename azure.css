@@ -599,6 +599,9 @@ form {
   background-image: url(images/nba-desktop.webp);
   min-height: 600px;
   height: 100%;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
 }
@@ -844,7 +847,10 @@ form {
   background-position: center;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 .alex-wrapper {
   position: absolute;
@@ -1178,5 +1184,9 @@ footer {
   }
   .tab-text br{
     display: none;
+    cursor: pointer;
+    flex flex-directionrowl
+
+    sdfljgh'l
   }
 }
